@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+   /* box-sizing: border-box; */
+}
+
+:root {
+    --primary-font: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: #f1f5f8;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+h2, h4 {
+    letter-spacing: 0.1rem;
+    line-height: 1.75;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 0.9rem;
+    color: hsl(205, 78%, 60%);
+}
+
+main {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    background: whitesmoke;
+    height: 3rem;
+    margin-top: 0.5rem;
+   /* display: grid;
+    align-items: center; */
+    box-shadow: var(--dark-shadow);
+}
+
+.nav-center {
+    width: 90vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+}
+
+nav a {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(27, 25, 25, 0.861);
+    letter-spacing: var(--spacing);
+    margin-right: 1rem;
+}
+
+  nav a:hover{
+    color: hsl(205, 78%, 60%);
+}
+
+.container{
+    text-align: center;
+}
+
+.container h2 {
+    background: black;
+    color: whitesmoke;
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 2.5rem;
+  }
+
+.btn-hero {
+    font-family: var(--primary-font);
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 2.5rem;
+    background-color: transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-hero:hover {
+    background-color: black;
+    color: whitesmoke;
+}
